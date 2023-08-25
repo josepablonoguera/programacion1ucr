@@ -8,8 +8,8 @@ package clases;
  *
  * @author ucr
  */
-public class Invoice {
+public class Product {
     
-    String code;
+    
     
 }
