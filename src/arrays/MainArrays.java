@@ -24,7 +24,7 @@ public class MainArrays {
 //        }
         
         int sumatoria =0;
-        for (int i = 0; i <= notas.length; i++) {
+        for (int i = 0; i < notas.length; i++) {
            sumatoria+=notas[i];
         }
         int promedio = 0;
