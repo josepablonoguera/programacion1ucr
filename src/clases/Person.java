@@ -38,6 +38,15 @@ public class Person {
         this.contac= contac;
        
     }
+    
+     public Person(char gender, String id, String name) {
+        this.gender = gender;            
+        this.id = id;
+        this.name = name;
+        
+      
+       
+    }
 
     /**
      * @return the gender
