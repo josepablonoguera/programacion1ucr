@@ -9,6 +9,7 @@ import java.util.Date;
 /**
  *
  * @author ucr
+ * @see Contact
  */
 public class Person {
      
@@ -18,12 +19,14 @@ public class Person {
     private String name;
     private Contact contac;
   
-
+    /**
+     * 
+     */
     public Person() {
         this.gender = 'N';
         this.birthday = null;       
         this.id = "No definido";
-        this.name = "NO definido";  
+        this.name = "NO definido";  // 
         this.contac = new Contact();
     } 
     

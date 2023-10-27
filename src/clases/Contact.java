@@ -5,7 +5,7 @@
 package clases;
 
 /**
- *
+ * eSTA CLASE ES PARAPAPAPAPAPAP
  * @author ucr
  */
 public class Contact {
@@ -17,6 +17,9 @@ public class Contact {
     private String webPage;
     private String[] socialMedia;
 
+    /**
+     * Este es el constructor vacío
+     */
     public Contact() {
         this.phone = "No definido";
         this.email = "No definido";
@@ -26,6 +29,15 @@ public class Contact {
         this.socialMedia = null;
     }
 
+    /**
+     * 
+     * @param phone 
+     * @param email
+     * @param address
+     * @param cellPhone
+     * @param webPage
+     * @param socialMedia 
+     */
     public Contact(String phone, String email, String address,
             String cellPhone, String webPage, String[] socialMedia) {
         this.phone = phone;
@@ -39,13 +51,14 @@ public class Contact {
     /**
      * @return the phone
      */
-    public String getPhone() {
+    private String getPhone() {
         return phone;
     }
 
-    /**
-     * @param phone the phone to set
-     */
+  /**
+   * 
+   * @param phone   * 
+   */
     public void setPhone(String phone) {
         this.phone = phone;
     }
