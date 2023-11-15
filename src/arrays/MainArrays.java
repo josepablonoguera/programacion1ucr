@@ -13,31 +13,34 @@ import java.util.Arrays;
  */
 public class MainArrays {
 
-    static  int notas []  ;
+    
     
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
- 
+    public static void main(String [] args) {  // 
+      
+        
+        int notas [] = new int[4]  ; // 20 bytes [1,2,3,5] + notas
         
         try {
-            int sumatoria = 0;
-            for (int i = 0; i < notas.length; i++) {
+            int sumatoria = 0;  //4 bytes
+            for (int i = 0; i < notas.length; i++) { // 4 bytes
                 sumatoria += notas[i];
             }
-            int promedio = 0;
+            int promedio = 0;  //4 bytes 
             
             promedio = sumatoria / notas.length;
-            System.out.println("promedio: " + promedio);
+            System.out.println("promedio: " + promedio); // 20 bytes
             
-            Arrays.sort(notas);
+            Arrays.sort(notas);//
             
-            System.out.println("");
+            System.out.println("");//
             
-            System.out.println("------");
-            for (int j = 0; j < notas.length; j++) {
-                System.out.println("notas:[" + j + "] = " + notas[j]);
+            System.out.println("------");// 12 bytes
+            for (int j = 0; j < notas.length; j++) { // 4 bytes
+                System.out.println("notas:[" + j + "] = " + notas[j]);  // 22 bytes * (N)  
+                
             }
         } 
      
