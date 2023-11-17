@@ -28,7 +28,7 @@ public class ReadFile {
     private static ArrayList<Votante> getDataVotantes(ArrayList<Votante> votantes,
             BufferedReader br, String line) throws IOException {
     
-        if (line == null) { // final del fichero
+        if (line == null) { // caso base
             return votantes;
         }
         String dataVotante[] = line.split(",");
@@ -44,6 +44,7 @@ public class ReadFile {
         );
         
         votantes.add(nuevo);
+        
         return getDataVotantes(votantes, br, br.readLine());
 
         
